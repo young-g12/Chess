@@ -20,11 +20,13 @@ int main() {
 
 	}
 
+	printf("  a  b  c  d  e  f  g  h\n");
 	for (int i = 0; i < 8; i++) {
-		for (int j = 0; j < i; j++) {
-			printf("%d\n", j);
+		printf("%d", 8 - i);
+		for (int j = 0; j < 8; j++) {
+			printf(" * ");
 		}
-		printf(" ");
+		printf("\n");
 	}
 	
 	return 0;
