@@ -9,33 +9,40 @@ int main() {
 	int r = rand() % 2;
 	
 
-	printf("Welcome to Chess\n");
-	printf("Select color:\n");
+	printf("--Welcome to Chess--\n");
+	printf("Choose either 1 or 0:\n");
 	
-	printf("%d\n", r);
-
-
-	printf("1. Black\n");
-	printf("2. White\n");
 	scanf("%d", &userColor);
+	printf("Random number: %d\n", r);
 
-	if (userColor == 1) {
-		printf("You have selected black.\n");
-	} else if (userColor == 2) {
-		printf("You have selected white.\n");
+	if (userColor == r) {
+		printf("You have selected %d. You go first.\n", userColor);
+	} else if (userColor != r) {
+		printf("Computer goes first");
 	} else {
-		printf("Wrong input, select correct color\n");
-
-	}
-
-	printf("  a  b  c  d  e  f  g  h\n");
-	for (int i = 0; i < 8; i++) {
-		printf("%d", 8 - i);
-		for (int j = 0; j < 8; j++) {
-			printf(" * ");
-		}
-		printf("\n");
+		printf("Incorrect input. Try again.");
 	}
 	
+	// printf("  a  b  c  d  e  f  g  h\n");
+	// for (int i = 0; i < 8; i++) {
+	// 	printf("%d", 8 - i);
+	// 	for (int j = 0; j < 8; j++) {
+	// 		printf(" * ");
+	// 	}
+	// 	printf("\n");
+	// }
+	
+	// // move a piece 
+	// printf("  a  b  c  d  e  f  g  h\n");
+	// for (int i = 0; i < 8; i++) {
+	// 	printf("%d", 8 - i);
+	// 	for (int j = 0; j < 8; j++) {
+	// 		printf(" * ");
+	// 	}
+	// 	printf("\n");
+	// }
+
+	// show updated board
+
 	return 0;
 }
