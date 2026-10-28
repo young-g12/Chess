@@ -14,6 +14,12 @@ int main() {
 	int r = rand() % 2;
 	char userInput[3];
 	int pieceSelector;
+	char pawn = 'p';
+	char knight = 'k';
+	char bishop = 'b';
+	char rook = "r";
+	char king = 'k';
+	char queen = 'q'; 
 	
 
 	printf("--Welcome to Chess--\n");
@@ -39,8 +45,6 @@ int main() {
 		printf("\n");
 	}
 
-	printf("Enter move w/ coordinates: ");
-	scanf("%s", userInput);
 	
 	//if statements for each possible move w/ error handling 
 
@@ -50,18 +54,84 @@ int main() {
 	printf("3. Knight\n");
 	printf("4. Bishop\n");
 	printf("5. Queen\n");
-	printf("5. King\n");
+	printf("6. King\n");
 	scanf("%d: \n", &pieceSelector);
 
+	// pawn movement
 	if (pieceSelector == 1) {
 		printf("You've selected pawn\n");
+		printf("\n");
+		printf("Enter coordinates: ");
+		scanf("%s", userInput);
+
+		if (strcmp(userInput, "a1") == 0 || 
+			strcmp(userInput,"A1") == 0) {
+			printf("Cannot move there currently, select another position\n");
+		}  else if (strcmp(userInput, "b1") == 0 || 
+		strcmp(userInput, "B1") == 0) {
+			printf("Cannot move there currently, select another position\n");
+		}  else if (strcmp(userInput, "c1") == 0 || 
+		strcmp(userInput, "C1") == 0) {
+			printf("Cannot move there currently, select another position\n");
+		}  else if (strcmp(userInput, "d1") == 0 || 
+		strcmp(userInput, "D1") == 0) {
+			printf("Cannot move there currently, select another position\n");
+		}  else if (strcmp(userInput, "e1") == 0 || 
+		strcmp(userInput, "E1") == 0) {
+			printf("Cannot move there currently, select another position\n");
+		}  else if (strcmp(userInput, "f1") == 0 || 
+		strcmp(userInput, "F1") == 0) {
+			printf("Cannot move there currently, select another position\n");
+		}  else if (strcmp(userInput, "g1") == 0 || 
+		strcmp(userInput, "G1") == 0) {
+			printf("Cannot move there currently, select another position\n");
+		}  else if (strcmp(userInput, "h1") == 0 || 
+		strcmp(userInput, "H1") == 0) {
+			printf("Cannot move there currently, select another position\n");
+		} else if (strcmp(userInput, "a2") == 0 || 
+			strcmp(userInput,"A2") == 0) {
+			printf("Cannot move there currently, select another position\n");
+		}  else if (strcmp(userInput, "b2") == 0 || 
+		strcmp(userInput, "B2") == 0) {
+			printf("Cannot move there currently, select another position\n");
+		}  else if (strcmp(userInput, "c2") == 0 || 
+		strcmp(userInput, "C2") == 0) {
+			printf("Cannot move there currently, select another position\n");
+		}  else if (strcmp(userInput, "d2") == 0 || 
+		strcmp(userInput, "D2") == 0) {
+			printf("Cannot move there currently, select another position\n");
+		}  else if (strcmp(userInput, "e2") == 0 || 
+		strcmp(userInput, "E2") == 0) {
+			printf("Cannot move there currently, select another position\n");
+		}  else if (strcmp(userInput, "f2") == 0 || 
+		strcmp(userInput, "F2") == 0) {
+			printf("Cannot move there currently, select another position\n");
+		}  else if (strcmp(userInput, "g2") == 0 || 
+		strcmp(userInput, "G2") == 0) {
+			printf("Cannot move there currently, select another position\n");
+		}  else if (strcmp(userInput, "h2") == 0 || 
+		strcmp(userInput, "H2") == 0) {
+			printf("Cannot move there currently, select another position\n");
+		} else if (strcmp( userInput, "")) {
+			
+		}
+		
+	} else if (pieceSelector == 2) {
+		printf("You've selected Rook\n");
+	} else if (pieceSelector == 3) {
+		printf("You've selected Knight\n");
+	} else if (pieceSelector == 4) {
+		printf("You've selected Bishop\n");
+	} else if (pieceSelector == 5) {
+		printf("You've selected Queen\n");
+	} else if (pieceSelector == 6) {
+		printf("You've selected King\n");
 	} else {
-		printf("Back to menu\n");
+		printf("Invalid choice, please select again from  1 - 6.");
 	}
-	//pawns
-	//print
 
 	//knights
+	
 
 	//castle
 
@@ -71,46 +141,6 @@ int main() {
 
 	//queen
 
-
-	if (strcmp(userInput, "a1") == 0 || 
-		strcmp(userInput,"A1") == 0) {
-		printf("Cannot move there currently\n");
-	} else if (strcmp(userInput, "a5")) {
-
-	}
-	// else if (userInput == 'b1') {
-	// 	printf("Cannot move there currently");
-	// } else if (userInput == 'c1') {
-	// 	printf("Cannot move there currently");
-	// } else if (userInput == 'd1') {
-	// 	printf("Cannot move there currently");
-	// } else if (userInput == 'e1') {
-	// 	printf("Cannot move there currently");
-	// } else if (userInput == 'f1') {
-	// 	printf("Cannot move there currently");
-	// } else if (userInput == 'g1') {
-	// 	printf("Cannot move there currently");
-	// } else if (userInput == 'h1') {
-	// 	printf("Cannot move there currently");
-	// } else if (userInput == 'a2') {
-	// 	printf("Cannot move there currently");
-	// } else if (userInput == 'b2') {
-	// 	printf("Cannot move there currently");
-	// } else if (userInput == 'c2') {
-	// 	printf("Cannot move there currently");
-	// } else if (userInput == 'd2') {
-	// 	printf("Cannot move there currently");
-	// } else if (userInput == 'e2') {
-	// 	printf("Cannot move there currently");
-	// } else if (userInput == 'f2') {
-	// 	printf("Cannot move there currently");
-	// } else if (userInput == 'g2') {
-	// 	printf("Cannot move there currently");
-	// } else if (userInput == 'h2') {
-	// 	printf("Cannot move there currently");
-	// } else if (userInput == 'a3') {
-	// 	printf("Cannot move there currently");
-	// } 
 	
 
 	// show updated board
