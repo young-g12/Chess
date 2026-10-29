@@ -17,7 +17,7 @@ int main() {
 	char pawn = 'p';
 	char knight = 'k';
 	char bishop = 'b';
-	char rook = "r";
+	char rook = 'r';
 	char king = 'k';
 	char queen = 'q'; 
 	
@@ -40,7 +40,13 @@ int main() {
 	for (int i = 0; i < 8; i++) {
 		printf("%d", 8 - i);
 		for (int j = 0; j < 8; j++) {
-			printf(" . ");
+			if (i == 6 || i == 1) {
+				printf(" p ");
+			} else if (i == 0 && j == 0 || i == 0 && j == 7 || i == 7 && j == 0 || i == 7 && j == 7) {
+				printf(" r "); 
+			} else {
+				printf(" . ");
+			}
 		}
 		printf("\n");
 	}
@@ -61,7 +67,7 @@ int main() {
 	if (pieceSelector == 1) {
 		printf("You've selected pawn\n");
 		printf("\n");
-		printf("Enter coordinates: ");
+		printf("Enter position: ");
 		scanf("%s", userInput);
 
 		if (strcmp(userInput, "a1") == 0 || 
@@ -120,6 +126,20 @@ int main() {
 		printf("You've selected Rook\n");
 	} else if (pieceSelector == 3) {
 		printf("You've selected Knight\n");
+
+		printf("\n");
+		printf("Enter position: ");
+		scanf("%s", userInput);
+		if (strcmp(userInput, "e2") == 0 || 
+			strcmp(userInput,"E2") == 0) {
+			printf("Cannot move there currently, select another position\n");
+		}  else if (strcmp(userInput, "b1") == 0 || 
+		strcmp(userInput, "B1") == 0) {
+			printf("Cannot move there currently, select another position\n");
+		}  else if (strcmp(userInput, "c1") == 0 || 
+		strcmp(userInput, "C1") == 0) {
+			printf("Cannot move there currently, select another position\n");
+		} 
 	} else if (pieceSelector == 4) {
 		printf("You've selected Bishop\n");
 	} else if (pieceSelector == 5) {
