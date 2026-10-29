@@ -44,7 +44,16 @@ int main() {
 				printf(" p ");
 			} else if (i == 0 && j == 0 || i == 0 && j == 7 || i == 7 && j == 0 || i == 7 && j == 7) {
 				printf(" r "); 
-			} else {
+			} else if (i == 0 && j == 1|| i == 0 && j == 6 || i == 7 && j == 1 || i == 7 && j == 6) {
+				printf(" k ");
+			} else if (i == 0 && j == 2 || i == 0 && j == 5 || i == 7 && j == 2 || i == 7 && j == 5) {
+				printf(" b ");
+			} else if (i == 0 && j == 3 || i == 7 && j == 3) {
+				printf(" Q ");
+			} else if (i == 0 && j == 4 || i == 7 && j == 4) {
+				printf(" K ");
+			}
+			else {
 				printf(" . ");
 			}
 		}
