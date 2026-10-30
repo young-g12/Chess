@@ -127,8 +127,33 @@ int main() {
 		}  else if (strcmp(userInput, "h2") == 0 || 
 		strcmp(userInput, "H2") == 0) {
 			printf("Cannot move there currently, select another position\n");
-		} else if (strcmp( userInput, "")) {
-			
+		} else if (strcmp( userInput, "d3") == 0 ||
+		strcmp(userInput, "D3") == 0) {
+			printf("Pawn to d3");
+			// not set yet
+			printf("  a  b  c  d  e  f  g  h\n");
+	for (int i = 0; i < 8; i++) {
+		printf("%d", 8 - i);
+		for (int j = 0; j < 8; j++) {
+			if (i == 6 || i == 1) {
+				printf(" p ");
+			} else if (i == 0 && j == 0 || i == 0 && j == 7 || i == 7 && j == 0 || i == 7 && j == 7) {
+				printf(" r "); 
+			} else if (i == 0 && j == 1|| i == 0 && j == 6 || i == 7 && j == 1 || i == 7 && j == 6) {
+				printf(" k ");
+			} else if (i == 0 && j == 2 || i == 0 && j == 5 || i == 7 && j == 2 || i == 7 && j == 5) {
+				printf(" b ");
+			} else if (i == 0 && j == 3 || i == 7 && j == 4) {
+				printf(" Q ");
+			} else if (i == 0 && j == 4 || i == 7 && j == 3) {
+				printf(" K ");
+			}
+			else {
+				printf(" . ");
+			}
+		}
+		printf("\n");
+	}
 		}
 		
 	} else if (pieceSelector == 2) {
@@ -148,7 +173,33 @@ int main() {
 		}  else if (strcmp(userInput, "c1") == 0 || 
 		strcmp(userInput, "C1") == 0) {
 			printf("Cannot move there currently, select another position\n");
-		} 
+		} else if (strcmp(userInput, "f3") == 0 || 
+		strcmp(userInput, "F3") == 0) {
+			printf("Knight to F3\n");
+			printf("  a  b  c  d  e  f  g  h\n");
+	for (int i = 0; i < 8; i++) {
+		printf("%d", 8 - i);
+		for (int j = 0; j < 8; j++) {
+			if (i == 6 || i == 1) {
+				printf(" p ");
+			} else if (i == 0 && j == 0 || i == 0 && j == 7 || i == 7 && j == 0 || i == 7 && j == 7) {
+				printf(" r "); 
+			} else if (i == 0 && j == 1|| i == 0 && j == 6 || i == 7 && j == 1 || i == 5 && j == 5) {
+				printf(" k ");
+			} else if (i == 0 && j == 2 || i == 0 && j == 5 || i == 7 && j == 2 || i == 7 && j == 5) {
+				printf(" b ");
+			} else if (i == 0 && j == 3 || i == 7 && j == 3) {
+				printf(" Q ");
+			} else if (i == 0 && j == 4 || i == 7 && j == 4) {
+				printf(" K ");
+			}
+			else {
+				printf(" . ");
+			}
+		}
+		printf("\n");
+	}
+		}
 	} else if (pieceSelector == 4) {
 		printf("You've selected Bishop\n");
 	} else if (pieceSelector == 5) {
