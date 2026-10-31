@@ -199,7 +199,33 @@ int main() {
 		}
 		printf("\n");
 	}
+		} else if (strcmp(userInput, "h3") == 0 ||
+	 strcmp(userInput, "H3") == 0) {
+		printf("knight to H3\n");
+		printf("  a  b  c  d  e  f  g  h\n");
+	for (int i = 0; i < 8; i++) {
+		printf("%d", 8 - i);
+		for (int j = 0; j < 8; j++) {
+			if (i == 6 || i == 1) {
+				printf(" p ");
+			} else if (i == 0 && j == 0 || i == 0 && j == 7 || i == 7 && j == 0 || i == 7 && j == 7) {
+				printf(" r "); 
+			} else if (i == 0 && j == 1|| i == 0 && j == 6 || i == 7 && j == 1 || i == 5 && j == 7) {
+				printf(" k ");
+			} else if (i == 0 && j == 2 || i == 0 && j == 5 || i == 7 && j == 2 || i == 7 && j == 5) {
+				printf(" b ");
+			} else if (i == 0 && j == 3 || i == 7 && j == 3) {
+				printf(" Q ");
+			} else if (i == 0 && j == 4 || i == 7 && j == 4) {
+				printf(" K ");
+			}
+			else {
+				printf(" . ");
+			}
 		}
+		printf("\n");
+	}
+	 }
 	} else if (pieceSelector == 4) {
 		printf("You've selected Bishop\n");
 	} else if (pieceSelector == 5) {
