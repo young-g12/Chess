@@ -129,13 +129,13 @@ int main() {
 			printf("Cannot move there currently, select another position\n");
 		} else if (strcmp( userInput, "d3") == 0 ||
 		strcmp(userInput, "D3") == 0) {
-			printf("Pawn to d3");
-			// not set yet
+			printf("Pawn to d3\n");
 			printf("  a  b  c  d  e  f  g  h\n");
 	for (int i = 0; i < 8; i++) {
 		printf("%d", 8 - i);
 		for (int j = 0; j < 8; j++) {
-			if (i == 6 || i == 1) {
+			if (i == 1 && j == 0 || i ==  1 && j == 1 || i == 1 && j == 2 || i == 1 && j ==3 || i == 1 && j == 4 || i == 1 && j == 5 || i == 1 && j == 6 || i == 1 && j == 7 ||
+				i == 6 && j == 0 || i == 6 && j == 1 || i == 6 && j == 2 || i == 6 && j == 4 || i == 6 && j == 5 || i == 6 && j == 6 || i == 6 && j == 7) {
 				printf(" p ");
 			} else if (i == 0 && j == 0 || i == 0 && j == 7 || i == 7 && j == 0 || i == 7 && j == 7) {
 				printf(" r "); 
@@ -147,6 +147,8 @@ int main() {
 				printf(" Q ");
 			} else if (i == 0 && j == 4 || i == 7 && j == 3) {
 				printf(" K ");
+			} else if (i == 5 && j == 3) {
+				printf(" p ");
 			}
 			else {
 				printf(" . ");
@@ -155,7 +157,129 @@ int main() {
 		printf("\n");
 	}
 		}
-		
+		else if (strcmp( userInput, "d4") == 0 ||
+		strcmp(userInput, "D4") == 0) {
+			printf("Pawn to d4\n");
+			printf("  a  b  c  d  e  f  g  h\n");
+	for (int i = 0; i < 8; i++) {
+		printf("%d", 8 - i);
+		for (int j = 0; j < 8; j++) {
+			if (i == 1 && j == 0 || i ==  1 && j == 1 || i == 1 && j == 2 || i == 1 && j ==3 || i == 1 && j == 4 || i == 1 && j == 5 || i == 1 && j == 6 || i == 1 && j == 7 ||
+				i == 6 && j == 0 || i == 6 && j == 1 || i == 6 && j == 2 || i == 6 && j == 4 || i == 6 && j == 5 || i == 6 && j == 6 || i == 6 && j == 7) {
+				printf(" p ");
+			} else if (i == 0 && j == 0 || i == 0 && j == 7 || i == 7 && j == 0 || i == 7 && j == 7) {
+				printf(" r "); 
+			} else if (i == 0 && j == 1|| i == 0 && j == 6 || i == 7 && j == 1 || i == 7 && j == 6) {
+				printf(" k ");
+			} else if (i == 0 && j == 2 || i == 0 && j == 5 || i == 7 && j == 2 || i == 7 && j == 5) {
+				printf(" b ");
+			} else if (i == 0 && j == 3 || i == 7 && j == 4) {
+				printf(" Q ");
+			} else if (i == 0 && j == 4 || i == 7 && j == 3) {
+				printf(" K ");
+			} else if (i == 4 && j == 3) {
+				printf(" p ");
+			}
+			else {
+				printf(" . ");
+			}
+		}
+		printf("\n");
+	}
+}
+	else if (strcmp( userInput, "a3") == 0 ||
+		strcmp(userInput, "A3") == 0) {
+			printf("Pawn to a3\n");
+			printf("  a  b  c  d  e  f  g  h\n");
+	for (int i = 0; i < 8; i++) {
+		printf("%d", 8 - i);
+		for (int j = 0; j < 8; j++) {
+			if (i == 1 && j == 0 || i ==  1 && j == 1 || i == 1 && j == 2 || i == 1 && j ==3 || i == 1 && j == 4 || i == 1 && j == 5 || i == 1 && j == 6 || i == 1 && j == 7
+			|| i == 6 && j == 1 || i == 6 && j == 2 || i == 6 && j == 3|| i == 6 && j == 4 || i == 6 && j == 5 || i == 6 && j == 6 || i == 6 && j == 7) {
+				printf(" p ");
+			} else if (i == 0 && j == 0 || i == 0 && j == 7 || i == 7 && j == 0 || i == 7 && j == 7) {
+				printf(" r "); 
+			} else if (i == 0 && j == 1|| i == 0 && j == 6 || i == 7 && j == 1 || i == 7 && j == 6) {
+				printf(" k ");
+			} else if (i == 0 && j == 2 || i == 0 && j == 5 || i == 7 && j == 2 || i == 7 && j == 5) {
+				printf(" b ");
+			} else if (i == 0 && j == 3 || i == 7 && j == 4) {
+				printf(" Q ");
+			} else if (i == 0 && j == 4 || i == 7 && j == 3) {
+				printf(" K ");
+			} else if (i == 5 && j == 0) {
+				printf(" p ");
+			}
+			else {
+				printf(" . ");
+			}
+		}
+		printf("\n");
+	}
+}
+else if (strcmp( userInput, "a4") == 0 ||
+		strcmp(userInput, "A4") == 0) {
+			printf("Pawn to a4\n");
+			
+			printf("  a  b  c  d  e  f  g  h\n");
+	for (int i = 0; i < 8; i++) {
+		printf("%d", 8 - i);
+		for (int j = 0; j < 8; j++) {
+			if (i == 1 && j == 0 || i ==  1 && j == 1 || i == 1 && j == 2 || i == 1 && j ==3 || i == 1 && j == 4 || i == 1 && j == 5 || i == 1 && j == 6 || i == 1 && j == 7
+			|| i == 6 && j == 1 || i == 6 && j == 2 || i == 6 && j == 3|| i == 6 && j == 4 || i == 6 && j == 5 || i == 6 && j == 6 || i == 6 && j == 7) {
+				printf(" p ");
+			} else if (i == 0 && j == 0 || i == 0 && j == 7 || i == 7 && j == 0 || i == 7 && j == 7) {
+				printf(" r "); 
+			} else if (i == 0 && j == 1|| i == 0 && j == 6 || i == 7 && j == 1 || i == 7 && j == 6) {
+				printf(" k ");
+			} else if (i == 0 && j == 2 || i == 0 && j == 5 || i == 7 && j == 2 || i == 7 && j == 5) {
+				printf(" b ");
+			} else if (i == 0 && j == 3 || i == 7 && j == 4) {
+				printf(" Q ");
+			} else if (i == 0 && j == 4 || i == 7 && j == 3) {
+				printf(" K ");
+			} else if (i == 4 && j == 0) {
+				printf(" p ");
+			}
+			else {
+				printf(" . ");
+			}
+		}
+		printf("\n");
+	}
+}
+else if (strcmp( userInput, "b3") == 0 ||
+		strcmp(userInput, "B3") == 0) {
+			printf("Pawn to b3\n");
+			
+			printf("  a  b  c  d  e  f  g  h\n");
+	for (int i = 0; i < 8; i++) {
+		printf("%d", 8 - i);
+		for (int j = 0; j < 8; j++) {
+			if (i == 1 && j == 0 || i ==  1 && j == 1 || i == 1 && j == 2 || i == 1 && j ==3 || i == 1 && j == 4 || i == 1 && j == 5 || i == 1 && j == 6 || i == 1 && j == 7
+			||i == 6 && j == 0 || i == 6 && j == 2 || i == 6 && j == 3|| i == 6 && j == 4 || i == 6 && j == 5 || i == 6 && j == 6 || i == 6 && j == 7) {
+				printf(" p ");
+			} else if (i == 0 && j == 0 || i == 0 && j == 7 || i == 7 && j == 0 || i == 7 && j == 7) {
+				printf(" r "); 
+			} else if (i == 0 && j == 1|| i == 0 && j == 6 || i == 7 && j == 1 || i == 7 && j == 6) {
+				printf(" k ");
+			} else if (i == 0 && j == 2 || i == 0 && j == 5 || i == 7 && j == 2 || i == 7 && j == 5) {
+				printf(" b ");
+			} else if (i == 0 && j == 3 || i == 7 && j == 4) {
+				printf(" Q ");
+			} else if (i == 0 && j == 4 || i == 7 && j == 3) {
+				printf(" K ");
+			} else if (i == 5 && j == 1) {
+				printf(" p ");
+			}
+			else {
+				printf(" . ");
+			}
+		}
+		printf("\n");
+	}
+}
+
 	} else if (pieceSelector == 2) {
 		printf("You've selected Rook\n");
 	} else if (pieceSelector == 3) {
@@ -193,7 +317,7 @@ int main() {
 			} else if (i == 0 && j == 4 || i == 7 && j == 4) {
 				printf(" K ");
 			}
-			else {
+			else { 
 				printf(" . ");
 			}
 		}
