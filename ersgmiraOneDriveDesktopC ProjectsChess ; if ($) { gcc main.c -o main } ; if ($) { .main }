@@ -1,0 +1,77 @@
+[33mcommit a594261c442e3a356eb482f2200b96f4da2bbb50[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Gil <gmiranda540@yahoo.com>
+Date:   Sun Nov 1 11:51:23 2026 -0500
+
+    continued building player1 mvmt
+
+[33mcommit e9c441ad95fcfbeb1ac85d72b6af65fd90c318d7[m
+Author: Gil Miranda <gmiranda540@yahoo.com>
+Date:   Sat Oct 31 14:35:32 2026 -0400
+
+    continue building piece movement throughout board, all possible moves, then build player2
+
+[33mcommit 378262683c48fd879bf45b025f19e2d9ed014e64[m
+Author: Gil <gmiranda540@yahoo.com>
+Date:   Fri Oct 30 16:34:05 2026 -0400
+
+    knight able to move and board can update
+
+[33mcommit 1d34cb44a7f98c22db9c43fcef292a187ccb8217[m
+Author: Gil <gmiranda540@yahoo.com>
+Date:   Thu Oct 29 07:21:32 2026 -0400
+
+    all pieces placed for intial game state
+
+[33mcommit f5691c112c69afbe5c205a9d276fe2fc9869a7de[m
+Author: Gil <gmiranda540@yahoo.com>
+Date:   Thu Oct 29 07:06:52 2026 -0400
+
+    started piece placement for pawns and rooks
+
+[33mcommit e3d0b55c74fc1b8afda9e1c141be5b410a8da754[m
+Author: Gil <gmiranda540@yahoo.com>
+Date:   Wed Oct 28 13:59:30 2026 -0400
+
+    currentyl cannt move piece to certain position; created variables for each piece; display unique 'piece number' on the board during intial viewing of game board w/ proper coordinates; will have to seperate between player1 and player2 moves.
+
+[33mcommit d66b10be8985d8fd14f890fe81dc33a5ee29dafb[m
+Author: Gil <gmiranda540@yahoo.com>
+Date:   Tue Oct 27 07:38:35 2026 -0400
+
+    piece type selection
+
+[33mcommit 01bc2dd6e4eff22ffc82525db38d72efc5791c16[m
+Author: Gil <gmiranda540@yahoo.com>
+Date:   Mon Oct 26 18:46:15 2026 -0400
+
+    began basic error handling
+
+[33mcommit 2f7199980830f1536c19517a1626bbb9408da541[m
+Author: Gil <gmiranda540@yahoo.com>
+Date:   Mon Oct 26 18:33:09 2026 -0400
+
+    fixed who goes first
+
+[33mcommit 1b3e85cf8d5b767e024787b1697e0a4247c5f728[m
+Author: Gil <gmiranda540@yahoo.com>
+Date:   Sun Oct 25 11:39:57 2026 -0400
+
+    random number generator for selecting which player get white or black pieces
+
+[33mcommit c8557c15918908c0b03df673e218eebba8a91d54[m
+Author: Gil <gmiranda540@yahoo.com>
+Date:   Sun Oct 25 11:33:18 2026 -0400
+
+    created chessboard
+
+[33mcommit 8d6483eb6c289b2abc8582797e2b9c3a153fb207[m
+Author: Gil <gmiranda540@yahoo.com>
+Date:   Sat Oct 24 09:16:47 2026 -0400
+
+    2 github
+
+[33mcommit 977dc6837874603813e2758b1dd4ef111acd389b[m
+Author: Gil Miranda <gmiranda540@yahoo.com>
+Date:   Fri Oct 23 17:05:39 2026 -0400
+
+    initial commit

@@ -220,7 +220,6 @@ int main() {
 else if (strcmp( userInput, "a4") == 0 ||
 		strcmp(userInput, "A4") == 0) {
 			printf("Pawn to a4\n");
-			
 			printf("  a  b  c  d  e  f  g  h\n");
 	for (int i = 0; i < 8; i++) {
 		printf("%d", 8 - i);
@@ -279,7 +278,336 @@ else if (strcmp( userInput, "b3") == 0 ||
 		printf("\n");
 	}
 }
-
+else if (strcmp( userInput, "b4") == 0 ||
+		strcmp(userInput, "B4") == 0) {
+			printf("Pawn to b4\n");
+			printf("  a  b  c  d  e  f  g  h\n");
+	for (int i = 0; i < 8; i++) {
+		printf("%d", 8 - i);
+		for (int j = 0; j < 8; j++) {
+			if (i == 1 && j == 0 || i ==  1 && j == 1 || i == 1 && j == 2 || i == 1 && j ==3 || i == 1 && j == 4 || i == 1 && j == 5 || i == 1 && j == 6 || i == 1 && j == 7
+			||i == 6 && j == 0 || i == 6 && j == 2 || i == 6 && j == 3|| i == 6 && j == 4 || i == 6 && j == 5 || i == 6 && j == 6 || i == 6 && j == 7) {
+				printf(" p ");
+			} else if (i == 0 && j == 0 || i == 0 && j == 7 || i == 7 && j == 0 || i == 7 && j == 7) {
+				printf(" r "); 
+			} else if (i == 0 && j == 1|| i == 0 && j == 6 || i == 7 && j == 1 || i == 7 && j == 6) {
+				printf(" k ");
+			} else if (i == 0 && j == 2 || i == 0 && j == 5 || i == 7 && j == 2 || i == 7 && j == 5) {
+				printf(" b ");
+			} else if (i == 0 && j == 3 || i == 7 && j == 4) {
+				printf(" Q ");
+			} else if (i == 0 && j == 4 || i == 7 && j == 3) {
+				printf(" K ");
+			} else if (i == 4 && j == 1) {
+				printf(" p ");
+			}
+			else {
+				printf(" . ");
+			}
+		}
+		printf("\n");
+	}
+}
+else if (strcmp( userInput, "c3") == 0 ||
+		strcmp(userInput, "C3") == 0) {
+			printf("Pawn to c3\n");
+			printf("  a  b  c  d  e  f  g  h\n");
+	for (int i = 0; i < 8; i++) {
+		printf("%d", 8 - i);
+		for (int j = 0; j < 8; j++) {
+			if (i == 1 && j == 0 || i ==  1 && j == 1 || i == 1 && j == 2 || i == 1 && j ==3 || i == 1 && j == 4 || i == 1 && j == 5 || i == 1 && j == 6 || i == 1 && j == 7
+			||i == 6 && j == 0 || i == 6 && j == 1 || i == 6 && j == 3|| i == 6 && j == 4 || i == 6 && j == 5 || i == 6 && j == 6 || i == 6 && j == 7) {
+				printf(" p ");
+			} else if (i == 0 && j == 0 || i == 0 && j == 7 || i == 7 && j == 0 || i == 7 && j == 7) {
+				printf(" r "); 
+			} else if (i == 0 && j == 1|| i == 0 && j == 6 || i == 7 && j == 1 || i == 7 && j == 6) {
+				printf(" k ");
+			} else if (i == 0 && j == 2 || i == 0 && j == 5 || i == 7 && j == 2 || i == 7 && j == 5) {
+				printf(" b ");
+			} else if (i == 0 && j == 3 || i == 7 && j == 4) {
+				printf(" Q ");
+			} else if (i == 0 && j == 4 || i == 7 && j == 3) {
+				printf(" K ");
+			} else if (i == 5 && j == 2) {
+				printf(" p ");
+			}
+			else {
+				printf(" . ");
+			}
+		}
+		printf("\n");
+	}
+}
+else if (strcmp( userInput, "c4") == 0 ||
+		strcmp(userInput, "C4") == 0) {
+			printf("Pawn to c4\n");
+			printf("  a  b  c  d  e  f  g  h\n");
+	for (int i = 0; i < 8; i++) {
+		printf("%d", 8 - i);
+		for (int j = 0; j < 8; j++) {
+			if (i == 1 && j == 0 || i ==  1 && j == 1 || i == 1 && j == 2 || i == 1 && j ==3 || i == 1 && j == 4 || i == 1 && j == 5 || i == 1 && j == 6 || i == 1 && j == 7
+			||i == 6 && j == 0 || i == 6 && j == 1 || i == 6 && j == 3|| i == 6 && j == 4 || i == 6 && j == 5 || i == 6 && j == 6 || i == 6 && j == 7) {
+				printf(" p ");
+			} else if (i == 0 && j == 0 || i == 0 && j == 7 || i == 7 && j == 0 || i == 7 && j == 7) {
+				printf(" r "); 
+			} else if (i == 0 && j == 1|| i == 0 && j == 6 || i == 7 && j == 1 || i == 7 && j == 6) {
+				printf(" k ");
+			} else if (i == 0 && j == 2 || i == 0 && j == 5 || i == 7 && j == 2 || i == 7 && j == 5) {
+				printf(" b ");
+			} else if (i == 0 && j == 3 || i == 7 && j == 4) {
+				printf(" Q ");
+			} else if (i == 0 && j == 4 || i == 7 && j == 3) {
+				printf(" K ");
+			} else if (i == 4 && j == 2) {
+				printf(" p ");
+			}
+			else {
+				printf(" . ");
+			}
+		}
+		printf("\n");
+	}
+}
+else if (strcmp( userInput, "e3") == 0 ||
+		strcmp(userInput, "E3") == 0) {
+			printf("Pawn to e3\n");
+			printf("  a  b  c  d  e  f  g  h\n");
+	for (int i = 0; i < 8; i++) {
+		printf("%d", 8 - i);
+		for (int j = 0; j < 8; j++) {
+			if (i == 1 && j == 0 || i ==  1 && j == 1 || i == 1 && j == 2 || i == 1 && j ==3 || i == 1 && j == 4 || i == 1 && j == 5 || i == 1 && j == 6 || i == 1 && j == 7
+			||i == 6 && j == 0 || i == 6 && j == 1 || i == 6 && j == 2 || i == 6 && j == 3 || i == 6 && j == 5 || i == 6 && j == 6 || i == 6 && j == 7) {
+				printf(" p ");
+			} else if (i == 0 && j == 0 || i == 0 && j == 7 || i == 7 && j == 0 || i == 7 && j == 7) {
+				printf(" r "); 
+			} else if (i == 0 && j == 1|| i == 0 && j == 6 || i == 7 && j == 1 || i == 7 && j == 6) {
+				printf(" k ");
+			} else if (i == 0 && j == 2 || i == 0 && j == 5 || i == 7 && j == 2 || i == 7 && j == 5) {
+				printf(" b ");
+			} else if (i == 0 && j == 3 || i == 7 && j == 4) {
+				printf(" Q ");
+			} else if (i == 0 && j == 4 || i == 7 && j == 3) {
+				printf(" K ");
+			} else if (i == 5 && j == 4) {
+				printf(" p ");
+			}
+			else {
+				printf(" . ");
+			}
+		}
+		printf("\n");
+	}
+}
+else if (strcmp( userInput, "e4") == 0 ||
+		strcmp(userInput, "E4") == 0) {
+			printf("Pawn to e4\n");
+			printf("  a  b  c  d  e  f  g  h\n");
+	for (int i = 0; i < 8; i++) {
+		printf("%d", 8 - i);
+		for (int j = 0; j < 8; j++) {
+			if (i == 1 && j == 0 || i ==  1 && j == 1 || i == 1 && j == 2 || i == 1 && j ==3 || i == 1 && j == 4 || i == 1 && j == 5 || i == 1 && j == 6 || i == 1 && j == 7
+			||i == 6 && j == 0 || i == 6 && j == 1 || i == 6 && j == 2 || i == 6 && j == 3 || i == 6 && j == 5 || i == 6 && j == 6 || i == 6 && j == 7) {
+				printf(" p ");
+			} else if (i == 0 && j == 0 || i == 0 && j == 7 || i == 7 && j == 0 || i == 7 && j == 7) {
+				printf(" r "); 
+			} else if (i == 0 && j == 1|| i == 0 && j == 6 || i == 7 && j == 1 || i == 7 && j == 6) {
+				printf(" k ");
+			} else if (i == 0 && j == 2 || i == 0 && j == 5 || i == 7 && j == 2 || i == 7 && j == 5) {
+				printf(" b ");
+			} else if (i == 0 && j == 3 || i == 7 && j == 4) {
+				printf(" Q ");
+			} else if (i == 0 && j == 4 || i == 7 && j == 3) {
+				printf(" K ");
+			} else if (i == 4 && j == 4) {
+				printf(" p ");
+			}
+			else {
+				printf(" . ");
+			}
+		}
+		printf("\n");
+	}
+}
+else if (strcmp( userInput, "f3") == 0 ||
+		strcmp(userInput, "F3") == 0) {
+			printf("Pawn to f3\n");
+			printf("  a  b  c  d  e  f  g  h\n");
+	for (int i = 0; i < 8; i++) {
+		printf("%d", 8 - i);
+		for (int j = 0; j < 8; j++) {
+			if (i == 1 && j == 0 || i ==  1 && j == 1 || i == 1 && j == 2 || i == 1 && j ==3 || i == 1 && j == 4 || i == 1 && j == 5 || i == 1 && j == 6 || i == 1 && j == 7
+			||i == 6 && j == 0 || i == 6 && j == 1 || i == 6 && j == 2 || i == 6 && j == 3 || i == 6 && j == 4 || i == 6 && j == 6 || i == 6 && j == 7) {
+				printf(" p ");
+			} else if (i == 0 && j == 0 || i == 0 && j == 7 || i == 7 && j == 0 || i == 7 && j == 7) {
+				printf(" r "); 
+			} else if (i == 0 && j == 1|| i == 0 && j == 6 || i == 7 && j == 1 || i == 7 && j == 6) {
+				printf(" k ");
+			} else if (i == 0 && j == 2 || i == 0 && j == 5 || i == 7 && j == 2 || i == 7 && j == 5) {
+				printf(" b ");
+			} else if (i == 0 && j == 3 || i == 7 && j == 4) {
+				printf(" Q ");
+			} else if (i == 0 && j == 4 || i == 7 && j == 3) {
+				printf(" K ");
+			} else if (i == 5 && j == 5) {
+				printf(" p ");
+			}
+			else {
+				printf(" . ");
+			}
+		}
+		printf("\n");
+	}
+}
+else if (strcmp( userInput, "f4") == 0 ||
+		strcmp(userInput, "F4") == 0) {
+			printf("Pawn to f4\n");
+			printf("  a  b  c  d  e  f  g  h\n");
+	for (int i = 0; i < 8; i++) {
+		printf("%d", 8 - i);
+		for (int j = 0; j < 8; j++) {
+			if (i == 1 && j == 0 || i ==  1 && j == 1 || i == 1 && j == 2 || i == 1 && j ==3 || i == 1 && j == 4 || i == 1 && j == 5 || i == 1 && j == 6 || i == 1 && j == 7
+			||i == 6 && j == 0 || i == 6 && j == 1 || i == 6 && j == 2 || i == 6 && j == 3 || i == 6 && j == 4 || i == 6 && j == 6 || i == 6 && j == 7) {
+				printf(" p ");
+			} else if (i == 0 && j == 0 || i == 0 && j == 7 || i == 7 && j == 0 || i == 7 && j == 7) {
+				printf(" r "); 
+			} else if (i == 0 && j == 1|| i == 0 && j == 6 || i == 7 && j == 1 || i == 7 && j == 6) {
+				printf(" k ");
+			} else if (i == 0 && j == 2 || i == 0 && j == 5 || i == 7 && j == 2 || i == 7 && j == 5) {
+				printf(" b ");
+			} else if (i == 0 && j == 3 || i == 7 && j == 4) {
+				printf(" Q ");
+			} else if (i == 0 && j == 4 || i == 7 && j == 3) {
+				printf(" K ");
+			} else if (i == 4 && j == 5) {
+				printf(" p ");
+			}
+			else {
+				printf(" . ");
+			}
+		}
+		printf("\n");
+	}
+}
+else if (strcmp( userInput, "g3") == 0 ||
+		strcmp(userInput, "G3") == 0) {
+			printf("Pawn to g3\n");
+			printf("  a  b  c  d  e  f  g  h\n");
+	for (int i = 0; i < 8; i++) {
+		printf("%d", 8 - i);
+		for (int j = 0; j < 8; j++) {
+			if (i == 1 && j == 0 || i ==  1 && j == 1 || i == 1 && j == 2 || i == 1 && j ==3 || i == 1 && j == 4 || i == 1 && j == 5 || i == 1 && j == 6 || i == 1 && j == 7
+			||i == 6 && j == 0 || i == 6 && j == 1 || i == 6 && j == 2 || i == 6 && j == 3 || i == 6 && j == 4 || i == 6 && j == 5 || i == 6 && j == 7) {
+				printf(" p ");
+			} else if (i == 0 && j == 0 || i == 0 && j == 7 || i == 7 && j == 0 || i == 7 && j == 7) {
+				printf(" r "); 
+			} else if (i == 0 && j == 1|| i == 0 && j == 6 || i == 7 && j == 1 || i == 7 && j == 6) {
+				printf(" k ");
+			} else if (i == 0 && j == 2 || i == 0 && j == 5 || i == 7 && j == 2 || i == 7 && j == 5) {
+				printf(" b ");
+			} else if (i == 0 && j == 3 || i == 7 && j == 4) {
+				printf(" Q ");
+			} else if (i == 0 && j == 4 || i == 7 && j == 3) {
+				printf(" K ");
+			} else if (i == 5 && j == 6) {
+				printf(" p ");
+			}
+			else {
+				printf(" . ");
+			}
+		}
+		printf("\n");
+	}
+}
+else if (strcmp( userInput, "g4") == 0 ||
+		strcmp(userInput, "G4") == 0) {
+			printf("Pawn to g4\n");
+			printf("  a  b  c  d  e  f  g  h\n");
+	for (int i = 0; i < 8; i++) {
+		printf("%d", 8 - i);
+		for (int j = 0; j < 8; j++) {
+			if (i == 1 && j == 0 || i ==  1 && j == 1 || i == 1 && j == 2 || i == 1 && j ==3 || i == 1 && j == 4 || i == 1 && j == 5 || i == 1 && j == 6 || i == 1 && j == 7
+			||i == 6 && j == 0 || i == 6 && j == 1 || i == 6 && j == 2 || i == 6 && j == 3 || i == 6 && j == 4 || i == 6 && j == 5 || i == 6 && j == 7) {
+				printf(" p ");
+			} else if (i == 0 && j == 0 || i == 0 && j == 7 || i == 7 && j == 0 || i == 7 && j == 7) {
+				printf(" r "); 
+			} else if (i == 0 && j == 1|| i == 0 && j == 6 || i == 7 && j == 1 || i == 7 && j == 6) {
+				printf(" k ");
+			} else if (i == 0 && j == 2 || i == 0 && j == 5 || i == 7 && j == 2 || i == 7 && j == 5) {
+				printf(" b ");
+			} else if (i == 0 && j == 3 || i == 7 && j == 4) {
+				printf(" Q ");
+			} else if (i == 0 && j == 4 || i == 7 && j == 3) {
+				printf(" K ");
+			} else if (i == 4 && j == 6) {
+				printf(" p ");
+			}
+			else {
+				printf(" . ");
+			}
+		}
+		printf("\n");
+	}
+}
+else if (strcmp( userInput, "h3") == 0 ||
+		strcmp(userInput, "H3") == 0) {
+			printf("Pawn to h3\n");
+			printf("  a  b  c  d  e  f  g  h\n");
+	for (int i = 0; i < 8; i++) {
+		printf("%d", 8 - i);
+		for (int j = 0; j < 8; j++) {
+			if (i == 1 && j == 0 || i ==  1 && j == 1 || i == 1 && j == 2 || i == 1 && j ==3 || i == 1 && j == 4 || i == 1 && j == 5 || i == 1 && j == 6 || i == 1 && j == 7
+			||i == 6 && j == 0 || i == 6 && j == 1 || i == 6 && j == 2 || i == 6 && j == 3 || i == 6 && j == 4 || i == 6 && j == 5 || i == 6 && j == 6) {
+				printf(" p ");
+			} else if (i == 0 && j == 0 || i == 0 && j == 7 || i == 7 && j == 0 || i == 7 && j == 7) {
+				printf(" r "); 
+			} else if (i == 0 && j == 1|| i == 0 && j == 6 || i == 7 && j == 1 || i == 7 && j == 6) {
+				printf(" k ");
+			} else if (i == 0 && j == 2 || i == 0 && j == 5 || i == 7 && j == 2 || i == 7 && j == 5) {
+				printf(" b ");
+			} else if (i == 0 && j == 3 || i == 7 && j == 4) {
+				printf(" Q ");
+			} else if (i == 0 && j == 4 || i == 7 && j == 3) {
+				printf(" K ");
+			} else if (i == 5 && j == 7) {
+				printf(" p ");
+			}
+			else {
+				printf(" . ");
+			}
+		}
+		printf("\n");
+	}
+}
+else if (strcmp( userInput, "h4") == 0 ||
+		strcmp(userInput, "H4") == 0) {
+			printf("Pawn to h4\n");
+			printf("  a  b  c  d  e  f  g  h\n");
+	for (int i = 0; i < 8; i++) {
+		printf("%d", 8 - i);
+		for (int j = 0; j < 8; j++) {
+			if (i == 1 && j == 0 || i ==  1 && j == 1 || i == 1 && j == 2 || i == 1 && j ==3 || i == 1 && j == 4 || i == 1 && j == 5 || i == 1 && j == 6 || i == 1 && j == 7
+			||i == 6 && j == 0 || i == 6 && j == 1 || i == 6 && j == 2 || i == 6 && j == 3 || i == 6 && j == 4 || i == 6 && j == 5 || i == 6 && j == 6) {
+				printf(" p ");
+			} else if (i == 0 && j == 0 || i == 0 && j == 7 || i == 7 && j == 0 || i == 7 && j == 7) {
+				printf(" r "); 
+			} else if (i == 0 && j == 1|| i == 0 && j == 6 || i == 7 && j == 1 || i == 7 && j == 6) {
+				printf(" k ");
+			} else if (i == 0 && j == 2 || i == 0 && j == 5 || i == 7 && j == 2 || i == 7 && j == 5) {
+				printf(" b ");
+			} else if (i == 0 && j == 3 || i == 7 && j == 4) {
+				printf(" Q ");
+			} else if (i == 0 && j == 4 || i == 7 && j == 3) {
+				printf(" K ");
+			} else if (i == 4 && j == 7) {
+				printf(" p ");
+			}
+			else {
+				printf(" . ");
+			}
+		}
+		printf("\n");
+	}
+}
 	} else if (pieceSelector == 2) {
 		printf("You've selected Rook\n");
 	} else if (pieceSelector == 3) {
